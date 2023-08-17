@@ -6,45 +6,30 @@ hide:
 ---
 
 <p align="center" class="no-margin" >
-<img width="1000px" height="338px" alt="Image title" data-cms-original-src="/assets/marinecoders_invert.png#only-light" src="/assets/marinecoders_invert.png?_cchid=876d8396266addb9cd94db80a5998c9c#only-light">
-</p>
-<p align="center" class="no-margin" >
-<img width="1000px" height="338px" alt="Image title" data-cms-original-src="/assets/marinecoders.png#only-dark" src="/assets/marinecoders.png?_cchid=9617b2808baeb3906858de39860c3fad#only-dark">
+<img width="1000px" height="338px" alt="Image title" data-cms-original-src="/assets/marinecoders_invert.png" src="/assets/banner_amcl.webp">
 </p>
 
 
-<div class="grid cards no-margin" markdown>
+<div class="grid cards" markdown>
 
--   [:material-tools:{ .lg .middle } __Projects__](/projects)
-
-    ---
-
-    Learn more about our open source projects.
-
-    [:octicons-arrow-right-24:Learn about our Projects](/projects)
-
--   [:material-account-group-outline:{ .lg .middle } __Join Marine Coders Chat__](/chat)
+-   :material-calendar:{ .lg .middle } __2023 AMCL Symposium__
 
     ---
 
-    Let’s build together. Join a community of practice
+    The Association of Marine Corps Logisticians (AMCL) welcomes you to be challenged, informed, and inspired at the second annual in-person AMCL Symposium from 8 – 10 August 2023, an engaging experience for thought-leadership, innovation, and connection for the logistics and supply chain professional community across the Marine Corps, Department of Defense, industry, small business, and academia.
 
-    [:octicons-arrow-right-24: Chat With Us](/chat)
 
--   [:material-school:{ .lg .middle } __Learn to Code__](/learn)
+    <img src="https://eventpower-res.cloudinary.com/image/upload/c_fit,f_auto,h_500,q_auto,w_1500/v1/web_assets/23amcl/n7mfqubadgbktzqbcjmf">
 
-    ---
+    [:octicons-arrow-right-24: Getting started](#)
 
-    Learn more about coding, DevSecOps, and enjoy our list of free courses
-
-    [:octicons-arrow-right-24: Start Learning Today](/learn)
 
 </div>
 
+
 <style>
-.md-main__inner {
-    display: flex;
-    height: 100%;
-    margin-top: 0px;
+.md-typeset .grid {
+    margin: 2rem 8rem;
 }
+.md-main__inner { display: flex; height: 100%; margin-top: 0px; }
 </style>

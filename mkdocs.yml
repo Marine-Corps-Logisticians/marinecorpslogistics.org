@@ -1,11 +1,8 @@
-site_name: Marine Coders
-site_url: https://marines.dev/
+site_name: Association of Marine Corps Logisticians
+site_url: https://www.marinecorpslogistics.org/
 # site_url: https://marines.dev/
 site_description: "Marine Coders is a community of Marine Corps stakeholders, active duty, reserve, retired, civilian, etc., that are interested in improving the force through software development."
-slogan: "#AnyMarineACoder"
 
-repo_url: https://github.com/marinecoders
-repo_name: marinecoders/marines.dev
 edit_uri: ""
 
 theme:
@@ -15,17 +12,18 @@ theme:
 
   icon:
     repo: fontawesome/brands/github
-  favicon: assets/favicon.png
-  logo: assets/logo.png
-
+  favicon: assets/amcl_logo.png
+  logo: assets/amcl_logo.png
+  font:
+    text: Roboto
   palette:
-    - scheme: slate
-      toggle:
-        icon: material/lightbulb-outline
-        name: Switch to light mode
-    - scheme: marinecoders-light
+    - scheme: amcl-light
       toggle:
         icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: amcl-dark
+      toggle:
+        icon: material/lightbulb-outline
         name: Switch to dark mode
 
   static_templates:
@@ -114,27 +112,26 @@ extra:
       link: https://marines.dev/feed_rss_created.xml
       
 copyright: >
-  Copyright &copy; 2023 Marine Coders
+  Copyright &copy; 2023 Association of Marine Corp Logisticians. Proudly created by Marine Coders
 
 nav:
-  - Home: 'https://marines.dev'
-  - Blog:
+  - Home: /
+  - Leadership: leadership.md
+  - The Log Blog:
     - blog/index.md 
-  - Learn: /learn
-  - Projects: /projects
-  - Opportunities: /opportunities
-  - Chat: /chat
+  - Chapters: /projects
+  - Partners: /opportunities
+  - Groups: /chat
   - About: /about
-  - MCSWF: 'https://www.hqmc.marines.mil/MCSWF/'
 
 banner:
-  title: Marine Coders - Public Mirror
+  title: Not Official Marine Corps Website
   dropdown:
     left: >
       <strong>Official websites use .mil</strong><br>
-      This is not our official site. A .mil website belongs to an official government organization
-      in the United States. Visit our official website at <a style="color:#00BFFF" href="https://marinecoders.dev.usmc.mil">https://marinecoders.dev.usmc.mil</a>
+      Pursuant to MCO 5030.3B:  Neither the United States Marine Corps nor any other component of the Department of Defense (DoD) has approved, endorsed, or authorized this activity. The appearance of U.S. DoD visual information does not imply or constitute DoD endorsement. A .mil website belongs to an official government organization
+      in the United States.
     right: >
-      <strong>Secure .dev websites use HTTPS</strong><br>
-      A lock (<span class="icon-lock">🔒</span>) or https:// means you've safely connected to the .dev website. Share
+      <strong>Secure .org websites use HTTPS</strong><br>
+      A lock (<span class="icon-lock">🔒</span>) or https:// means you've safely connected to the .org website. Share
       sensitive information only on official, secure websites.
