@@ -1,0 +1,387 @@
+/* Overwriting Themes */
+:root {
+    --amcl-bg: #252a34;
+    --amcl-bg--dark: #1a1d24;
+    --amcl-bg--darkest: #13151b;
+    --amcl-bg--light: #dee4e7;
+    --amcl-red--light: #ecb7b7;
+    --amcl-red: #cf2929;
+    --amcl-icon: black;
+
+    --md-text-font-family: "playfairdisplay-bold,playfair display,serif";
+}
+
+[data-md-color-scheme="amcl-light"] {
+    --md-icon: black;
+    --md-text: black;
+    --md-primary-fg-color: var(--amcl-bg--dark);
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark: var(--amcl-red);
+    --md-typeset-a-color: var(--amcl-red);
+    --md-accent-fg-color: var(--amcl-red);
+    --md-default-bg-color: white;
+
+}
+
+[data-md-color-scheme="amcl-dark"] {
+    --md-hue: 210;
+    --md-text: white;
+    --amcl-icon: white;
+    --md-default-bg-color: var(--amcl-bg);
+    --md-primary-fg-color: white;
+    --md-primary-fg-color--light: #ECB7B7;
+    --md-primary-fg-color--dark: var(--amcl-red);
+    --md-typeset-a-color: var(--amcl-red);
+    --md-accent-fg-color: var(--amcl-red);
+    --md-accent-fg-color--transparent: hsla(var(--amcl-red), 0.1);
+
+}
+
+body {
+    color: var(--md-text)
+}
+.md-header__button {
+    color: var(--amcl-icon) !important;
+}
+.md-search__form:hover {
+    background-color: transparent !important;
+}
+.md-search__form {
+    background-color: transparent !important;
+}
+
+.md-search__input::placeholder {
+    color: var(--md-text) !important;
+}
+
+.md-search__icon {
+    color: var(--md-text) !important;
+}
+
+.md-tabs__item {
+    color: var(--md-text);
+}
+
+.md-header__topic{
+    color: var(--md-text);
+}
+.md-banner {
+    background-color: var(--amcl-bg--dark);
+}
+
+.md-button {
+    color: var(--amcl-red) !important;
+}
+
+.md-button:is(:focus, :hover) {
+    background-color: var(--amcl-red);
+    border-color: var(--amcl-red);
+    color: black !important;
+}
+
+.md-button--primary {
+    background-color: var(--amcl-red) !important;
+    border-color: var(--amcl-red) !important;
+    color: #ffffff !important;
+}
+
+.md-button--primary:is(:focus, :hover) {
+    background-color: #e44040 !important;
+    border-color: #e44040 !important;
+    color: #ffffff !important;
+}
+
+.md-footer-meta {
+    background-color: var(--md-text) !important;
+}
+
+.md-copyright__highlight {
+    color: var(--md-text);
+}
+
+.md-social__link {
+    color: var(--md-text) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .md-header__topic {
+        display: grid;
+    }
+
+    .md-header__custom {
+        display: contents;
+    }
+
+    .md-header__title {
+        line-height: 1.65rem;
+    }
+
+    /* Custom Element */
+    .md-header__sub {
+        font-weight: 100;
+        line-height: 0px;
+        font-size: .65em;
+    }
+}
+
+.md-header__sub {
+    background-color: var(--amcl-bg);
+}
+
+.md-header  {
+    background-color: var(--md-default-bg-color);
+}
+
+.md-tabs__inner {
+    background-color: var(--md-default-bg-color);
+}
+
+.md-tabs {
+    background-color: var(--md-default-bg-color);
+}
+/* PyMdown Extensions Progress Bar CSS */
+
+.progress-label {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin: 0 ! important;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 1.2rem;
+    float: left;
+    background: repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.2) 10px,
+            rgba(255, 255, 255, 0.3) 10px,
+            rgba(255, 255, 255, 0.3) 20px) #2979ff;
+    border-radius: 2px;
+}
+
+.progress {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 1.2rem;
+
+    position: relative;
+}
+
+.progress-100plus .progress-bar {
+    background-color: #00c853;
+}
+
+.progress-80plus .progress-bar {
+    background-color: #64dd17;
+}
+
+.progress-60plus .progress-bar {
+    background-color: #fbc02d;
+}
+
+.progress-40plus .progress-bar {
+    background-color: #ff9100;
+}
+
+.progress-20plus .progress-bar {
+    background-color: #ff5252;
+}
+
+.progress-0plus .progress-bar {
+    background-color: #ff1744;
+}
+
+/* USWDS Banner */
+
+body {
+    font-family: "playfairdisplay-bold,playfair display,serif";
+    margin: 0;
+    padding: 0;
+}
+
+.md-search__input {
+    font-family: "playfairdisplay-bold,playfair display,serif"
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-content-click {
+        display: grid;
+    }
+
+    .banner-header {
+        padding: 4px;
+        margin: 5px 0px 5px 0px;
+        display: grid !important;
+        padding-bottom: 5px;
+    }
+
+    .banner-header a {
+        padding: 0px;
+        padding-left: 1.5em;
+    }
+
+    .banner-header div {
+        padding: 0px;
+    }
+
+    .banner__inner {
+        width: 95%;
+    }
+
+    .banner-content__text {
+        font-size: .65rem;
+        margin-left: 5.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .banner-content-click {
+        display: flex;
+    }
+
+    .banner__inner {
+        width: 80%;
+    }
+
+    .banner-content__text {
+        font-size: .8rem;
+    }
+}
+
+.banner-icon {
+    margin-right: 5px;
+}
+
+.banner__inner {
+    font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: .75rem !important;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+.banner__outer {
+    justify-content: center;
+    display: flex;
+    background-color: var(--md-default-bg-color);
+}
+
+.banner-header {
+    padding: 0px 16px;
+    display: flex;
+    color: var(--md-text);
+}
+
+.banner-header a {
+    color: var(--md-text);;
+    text-decoration: underline;
+}
+
+.banner-header img {
+    object-fit: contain;
+}
+
+.banner-header>* {
+    padding: 5px;
+}
+
+.banner-content {
+    padding: 0em 1em 1em 1em;
+}
+
+.banner-content img {
+    width: 64px;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.banner-content__text {
+    font-family: Public Sans Web, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    color: var(--md-text);
+}
+
+.banner-content__logo {
+    margin: 1rem;
+}
+
+.icon-lock {
+    color: transparent;
+    text-shadow: 0 0 0 var(--md-text);
+}
+
+.icon-lock::selection {
+    text-shadow: 0 0 0 black;
+}
+
+/* Custom CSS */
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+/* Initial Body Fade In */
+body {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
